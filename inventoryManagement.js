@@ -10,13 +10,10 @@ logFirstProduct(); //Should show Laptop for index 0
 
 //Adds new product to the product array 
 function addProduct(name){
-  const newName = {
-    name: name
-  }
-  products.push(newName);
+  products.push(name);
 }
 
-addProduct("keyboard");
+addProduct("Keyboard");
 //Should show array wiht Keyboard added as well
 console.log(products);
 
