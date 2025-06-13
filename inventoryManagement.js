@@ -10,10 +10,10 @@ logFirstProduct(); //Should show Laptop for index 0
 
 //Adds new product to the product array 
 function addProduct(name){
-  const newProduct = {
+  const newName = {
     name: name
   }
-  products.push(newProduct);
+  products.push(newName);
 }
 
 addProduct("keyboard");
@@ -21,11 +21,11 @@ addProduct("keyboard");
 console.log(products);
 
 //Updates the name of the first index/product in the products array
-function updateProductName(newName){
-  products[0] = newName;
+function updateProductName(index, newName){
+  products[index] = newName;
 }
 
-updateProductName("Macbook");
+updateProductName(0, "Macbook");
 //"Macbook" should appear for index 0
 console.log(products); 
 
